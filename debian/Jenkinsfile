@@ -10,7 +10,9 @@ String[] distributions = [
 			//                 // Re-enable once the stack builds cleanly for Forky.
 			'ubuntu:jammy',
 			'ubuntu:noble',
-			'ubuntu:resolute',
+			// 'ubuntu:resolute', // Disabled: depends on python3-tensorflow,
+			//                    // which isn't built for resolute (ships
+			//                    // Python 3.14, no upstream TF wheel for it).
 ]
 
 String vendor = 'vitexsoftware'
