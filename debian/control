@@ -1,0 +1,29 @@
+Source: python-tf-keras
+Section: python
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-setuptools,
+Standards-Version: 4.7.0
+Homepage: https://github.com/keras-team/tf-keras
+Vcs-Git: https://github.com/Vitexus/python-tf-keras.git
+Vcs-Browser: https://github.com/Vitexus/python-tf-keras
+Rules-Requires-Root: no
+
+Package: python3-tf-keras
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ python3-tensorflow (>= 2.21~),
+Description: Deep learning for humans (legacy Keras 2, TF backend)
+ TF-Keras is the legacy Keras 2 API, kept as a standalone package now
+ that Keras 3 (python3-keras) is TensorFlow's default. Some libraries,
+ such as opennsfw2, still depend on this TF-bundled Keras 2 API.
+ .
+ Packaged as an opennsfw2 dependency for the invokeai-mastodon
+ project's local NSFW image classification.

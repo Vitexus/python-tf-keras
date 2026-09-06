@@ -1,0 +1,12 @@
+tf_keras.egg-info/
+.pybuild/
+debian/python3-tf-keras/
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/files
+debian/*.substvars
+debian/*.debhelper.log
+debian/*.debhelper
+debian/*.postinst.debhelper
+debian/*.prerm.debhelper
+debian/*.postrm.debhelper

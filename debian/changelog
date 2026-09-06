@@ -1,0 +1,7 @@
+python-tf-keras (2.21.0-1~vitex1) unstable; urgency=medium
+
+  * Initial Debian packaging of upstream 2.21.0. Packaged as an
+    opennsfw2 dependency for the invokeai-mastodon project's local
+    NSFW image classification.
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Sun, 06 Sep 2026 15:30:00 +0200

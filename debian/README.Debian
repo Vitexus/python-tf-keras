@@ -1,0 +1,9 @@
+python3-tf-keras for Debian
+===========================
+
+Packaged under the VitexSoftware Vitexus fork, as a transitive
+dependency of opennsfw2 for the invokeai-mastodon project's local
+NSFW image classification. opennsfw2 uses tf-keras's legacy Keras 2
+API rather than Keras 3.
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Sun, 06 Sep 2026 15:30:00 +0200
