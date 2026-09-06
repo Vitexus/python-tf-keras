@@ -3,7 +3,11 @@
 // Current version of this Pipeline https://github.com/VitexSoftware/BuildImages/blob/main/Test/Jenkinsfile
 
 String[] distributions = [
-			'debian:bookworm',
+			// 'debian:bookworm', // Disabled: depends on python3-tensorflow,
+			//                    // which is now trixie-only (see
+			//                    // python-tensorflow's Jenkinsfile - a
+			//                    // recurring local-repo filesystem race
+			//                    // on bookworm/noble).
 			'debian:trixie',
 			// 'debian:forky', // Disabled: Forky is still unstable/research-only.
 			//                 // The full Debian package ecosystem is not yet available for Forky.
@@ -12,7 +16,8 @@ String[] distributions = [
 			//                 // python3-keras, which isn't built for jammy
 			//                 // (setuptools too old - see python-keras's
 			//                 // Jenkinsfile).
-			'ubuntu:noble',
+			// 'ubuntu:noble', // Disabled: depends on python3-tensorflow,
+			//                 // which is now trixie-only (see above).
 			// 'ubuntu:resolute', // Disabled: depends on python3-tensorflow,
 			//                    // which isn't built for resolute (ships
 			//                    // Python 3.14, no upstream TF wheel for it).
